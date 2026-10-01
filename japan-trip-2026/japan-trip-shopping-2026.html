@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>日本家族行 2026｜採買清單（名古屋→大阪）</title>
+<style>
+:root{
+  --bg:#121416; --bg-2:#1a1c1e; --card:#1e2124; --card-2:#25282c;
+  --ink:#e8eaed; --ink-soft:#c4c7cc; --muted:#9aa0a6; --muted-2:#6b7280;
+  --line:#2e3238; --line-strong:#3c424a;
+  --amber:#f0c14a; --amber-2:#d4a017; --amber-soft:rgba(240,193,74,.14); --amber-ink:#1a1408;
+  --ok:#7dcea0; --ok-soft:rgba(125,206,160,.12);
+  --warn:#f0a070; --warn-soft:rgba(240,160,112,.12);
+  --veg:#8fd4a8; --veg-soft:rgba(143,212,168,.14);
+  --dairy:#f0c14a; --dairy-soft:rgba(240,193,74,.12);
+  --shadow:0 8px 28px rgba(0,0,0,.4);
+  --r:8px;
+  --font:"PingFang TC","Hiragino Sans TC","Noto Sans TC","Microsoft JhengHei","Segoe UI",system-ui,sans-serif;
+  --board:"DIN Alternate","Helvetica Neue",Arial,"PingFang TC","Noto Sans TC",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--font);font-size:15.5px;color:var(--ink);
+  background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased;
+}
+a{color:var(--amber);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+
+.topbar{
+  position:sticky;top:0;z-index:40;
+  background:rgba(26,28,30,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  padding:12px 20px 10px;
+}
+.brand{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;margin-bottom:10px}
+.brand .sign{
+  font-family:var(--board);font-size:.65rem;font-weight:800;letter-spacing:.16em;
+  color:var(--amber-ink);background:var(--amber);padding:3px 8px;border-radius:3px;
+}
+.brand h1{margin:0;font-size:1.12rem;font-weight:800;letter-spacing:.03em}
+.brand .sub{font-size:.78rem;color:var(--muted)}
+
+.nav{
+  display:flex;flex-wrap:wrap;gap:6px;
+}
+.nav a{
+  font-size:.74rem;font-weight:700;padding:5px 10px;border-radius:999px;
+  background:var(--card);border:1px solid var(--line-strong);color:var(--ink-soft);
+  text-decoration:none;
+}
+.nav a:hover{border-color:var(--amber-2);color:var(--amber);background:var(--amber-soft)}
+
+.wrap{max-width:1180px;margin:0 auto;padding:18px 18px 64px}
+
+.hero{
+  background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r);
+  padding:18px 20px;margin-bottom:22px;
+}
+.hero p{margin:0 0 8px;color:var(--ink-soft);font-size:.92rem}
+.hero p:last-child{margin-bottom:0}
+.hero .note{font-size:.8rem;color:var(--muted)}
+
+.aside-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:12px;margin:18px 0 28px;
+}
+.aside-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:14px 16px;
+}
+.aside-card h3{
+  margin:0 0 8px;font-family:var(--board);font-size:.68rem;letter-spacing:.12em;
+  color:var(--amber);font-weight:800;text-transform:uppercase;
+}
+.aside-card ul{margin:0;padding-left:1.1em;color:var(--ink-soft);font-size:.88rem}
+.aside-card li{margin:4px 0}
+.aside-card p{margin:0;color:var(--ink-soft);font-size:.88rem}
+
+.section{margin:28px 0 10px;scroll-margin-top:96px}
+.section-head{
+  display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--line);
+}
+.section-head h2{
+  margin:0;font-size:1.05rem;font-weight:800;letter-spacing:.04em;
+}
+.section-head .count{
+  font-size:.72rem;color:var(--muted);font-weight:600;
+}
+
+.grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+  gap:14px;
+}
+
+.card{
+  display:grid;grid-template-columns:112px 1fr;gap:12px;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:12px;box-shadow:var(--shadow);
+  min-height:140px;
+}
+.card:hover{border-color:var(--line-strong)}
+
+.thumb{
+  width:112px;height:112px;border-radius:6px;overflow:hidden;
+  background:var(--card-2);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+}
+.thumb img{width:100%;height:100%;object-fit:contain;background:#fff}
+.thumb .empty{
+  color:var(--muted-2);font-size:.78rem;font-weight:700;text-align:center;
+  padding:8px;line-height:1.35;
+}
+
+.body{min-width:0;display:flex;flex-direction:column;gap:5px}
+.jp{
+  margin:0;font-size:.98rem;font-weight:800;letter-spacing:.02em;
+  line-height:1.3;color:var(--ink);
+}
+.zh{margin:0;font-size:.84rem;color:var(--ink-soft);font-weight:600}
+.why{margin:0;font-size:.8rem;color:var(--muted);line-height:1.45}
+.prices{
+  display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:2px;
+  font-size:.76rem;
+}
+.prices span{
+  background:var(--card-2);border:1px solid var(--line);border-radius:4px;
+  padding:2px 7px;color:var(--ink-soft);
+}
+.prices .fair{border-color:rgba(125,206,160,.35);color:var(--ok);background:var(--ok-soft)}
+.badge{
+  display:inline-block;align-self:flex-start;
+  font-size:.68rem;font-weight:800;padding:2px 8px;border-radius:999px;
+  margin-top:2px;
+}
+.badge.veg{background:var(--veg-soft);color:var(--veg);border:1px solid rgba(143,212,168,.35)}
+.badge.check{background:var(--warn-soft);color:var(--warn);border:1px solid rgba(240,160,112,.35)}
+.badge.dairy{background:var(--dairy-soft);color:var(--dairy);border:1px solid rgba(240,193,74,.35)}
+
+.footer{
+  margin-top:36px;padding:18px 0 8px;border-top:1px solid var(--line);
+  color:var(--muted);font-size:.78rem;line-height:1.6;
+}
+.footer strong{color:var(--ink-soft)}
+
+@media (max-width:560px){
+  .card{grid-template-columns:1fr}
+  .thumb{width:100%;height:160px}
+}
+@media print{
+  .topbar{position:static}
+  body{background:#fff;color:#111}
+  .card,.aside-card,.hero{box-shadow:none;border-color:#ddd;background:#fff}
+  .thumb img{background:#fff}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="sign">BUY</span>
+    <h1>日本家族行｜採買清單</h1>
+    <span class="sub">2026-11-27～12-04　名古屋 → 大阪　｜　價格參考、現場為準</span>
+  </div>
+  <nav class="nav" aria-label="分類導覽">
+    <a href="#med">常備藥／身體</a>
+    <a href="#care">護唇／保養</a>
+    <a href="#daily">日用</a>
+    <a href="#uniqlo">UNIQLO 保暖</a>
+    <a href="#snack">零食／伴手</a>
+    <a href="#tech">3C</a>
+    <a href="#tips">採買提醒</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <p>旅途常備＋伴手藥妝＋保暖／3C 的<strong>現場比價清單</strong>。卡片含日文品名、中文、為什麼買、價位區間與合理價。</p>
+    <p class="note">食品另標素食注意。圖片僅採官方／大型通路真實商品照；找不到則顯示「暫無圖」，不使用錯誤圖片。</p>
+  </div>
+
+  <div class="aside-grid" id="tips">
+    <aside class="aside-card">
+      <h3>怎麼判斷買貴</h3>
+      <ul>
+        <li>藥妝：<strong>至少比兩家</strong>（松本清／藥妝店 vs 唐吉訶德等）再決定。</li>
+        <li>機場、景點門口、車站名店櫃通常偏貴，非急用不優先。</li>
+        <li>UNIQLO 看價簽與期間限定；外套可對照官網原價區間。</li>
+        <li>3C 可對照 Anker 官網／量販，過貴就跳過。吸塵器等大件先比台灣價；Bic／Yodobashi／Joshin 問稅込＋點數＋下取り。</li>
+      </ul>
+    </aside>
+    <aside class="aside-card">
+      <h3>建議採買組合</h3>
+      <p><strong>最小實用包：</strong>解熱鎮痛（洛索／泰諾擇一）＋止瀉＋口內炎＋喉糖＋暖暖包＋護唇＋濕紙巾／面紙＋（需要）充電線／延長線。</p>
+      <p style="margin-top:8px"><strong>伴手藥妝包：</strong>Melano CC 精華（或化妝水）＋面膜盒＋（可選）Transino CC／Curél；再加鹽むすび／甘栗／羊羹等素食友善小點。</p>
+    </aside>
+    <aside class="aside-card">
+      <h3>價格說明</h3>
+      <p>下列「區間／合理價」為出發前參考區間，含稅習慣與店鋪促銷差異大。<strong>一律以現場標價與店員說明為準</strong>；第1類／第2類藥品須依店內藥劑師指示購買。</p>
+    </aside>
+  </div>
+
+  <!-- ===== 常備藥／身體 ===== -->
+  <section class="section" id="med">
+    <div class="section-head"><h2>常備藥／身體</h2><span class="count">8 項</span></div>
+    <div class="grid">
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/loxonin-s.jpg" alt="ロキソニンS" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">ロキソニンS（12錠）</p>
+          <p class="zh">洛索寧 S｜解熱鎮痛</p>
+          <p class="why">為什麼買：頭痛、牙痛等速效止痛常備</p>
+          <div class="prices"><span>區間 ¥650–900</span><span class="fair">合理約 ¥700–800</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/tylenol-a.jpg" alt="タイレノールA" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">タイレノールA</p>
+          <p class="zh">泰諾 A｜解熱鎮痛</p>
+          <p class="why">為什麼買：解熱鎮痛備選（對乙醯氨基酚系）</p>
+          <div class="prices"><span>區間 ¥500–800</span><span class="fair">合理約 ¥550–700</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/taisho-kampo.jpg" alt="大正漢方胃腸薬" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">大正漢方胃腸薬（錠剤／分包）</p>
+          <p class="zh">大正漢方胃腸藥｜腸胃</p>
+          <p class="why">為什麼買：旅途飲食不規律時的胃腸常備</p>
+          <div class="prices"><span>區間 ¥1000–1800</span><span class="fair">合理約 ¥1100–1400</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/seirogan.jpg" alt="セイロガン糖衣A" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">セイロガン糖衣A</p>
+          <p class="zh">正露丸糖衣 A｜止瀉</p>
+          <p class="why">為什麼買：止瀉／食傷常備（糖衣較無氣味）</p>
+          <div class="prices"><span>區間 ¥600–1000</span><span class="fair">合理約 ¥700–900</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/traful.jpg" alt="トラフル錠" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">トラフル錠 或 トラフル軟膏</p>
+          <p class="zh">Traful｜口內炎</p>
+          <p class="why">為什麼買：口內炎／口腔潰瘍舒緩</p>
+          <div class="prices"><span>區間 ¥700–1200</span><span class="fair">合理約 ¥800–1000</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/nodonuru.jpg" alt="のどぬーる飴" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">のどぬーる飴</p>
+          <p class="zh">諾德努爾喉糖｜喉痛</p>
+          <p class="why">為什麼買：喉嚨不適時的含片／喉糖</p>
+          <div class="prices"><span>區間 ¥200–400</span><span class="fair">合理約 ¥250–350</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/salonpas.jpg" alt="サロンパスAe" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">サロンパスAe 或 フェイタス</p>
+          <p class="zh">撒隆巴斯 Ae／Feitas｜痠痛貼</p>
+          <p class="why">為什麼買：走路多、肩膀／腰痠時貼布</p>
+          <div class="prices"><span>區間 ¥600–1500</span><span class="fair">合理約 ¥700–1200</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/kairo-onpax.jpg" alt="貼式カイロ オンパックス" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">ぬくぬく当番／ホカロン／オンパックス等（貼式カイロ）</p>
+          <p class="zh">暖暖包（貼式）約10片</p>
+          <p class="why">為什麼買：11月底～12月初戶外保暖（圖為常見貼式オンパックス；店頭同類型即可）</p>
+          <div class="prices"><span>區間 ¥400–700</span><span class="fair">合理約 ¥450–600</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== 護唇／保養 ===== -->
+  <section class="section" id="care">
+    <div class="section-head"><h2>護唇／保養</h2><span class="count">8 項</span></div>
+    <div class="grid">
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/lip-repair.jpg" alt="メンソレータム リペアワン" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">メンソレータム リップオンリペア</p>
+          <p class="zh">曼秀雷敦護唇修護（現售多為リペアワン系列）</p>
+          <p class="why">為什麼買：乾燥季節護唇／修護</p>
+          <div class="prices"><span>區間 ¥500–700</span><span class="fair">合理約 ¥550–650</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/melanocc-essence.jpg" alt="メラノCC 美容液" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">メラノCC 薬用しみ集中対策美容液 20ml</p>
+          <p class="zh">Melano CC 藥用集中對策美容液 20ml</p>
+          <p class="why">為什麼買：伴手／自用 CP 值高的維他命 C 精華</p>
+          <div class="prices"><span>區間 ¥1000–1400</span><span class="fair">合理約 ¥1100–1250</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/melanocc-premium.jpg" alt="メラノCC プレミアム美容液" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">メラノCC プレミアム美容液</p>
+          <p class="zh">Melano CC Premium 美容液</p>
+          <p class="why">為什麼買：進階版精華（預算夠再升級）</p>
+          <div class="prices"><span>區間 ¥1350–1700</span><span class="fair">合理約 ¥1450–1600</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/melanocc-lotion.jpg" alt="メラノCC 化粧水" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">メラノCC 化粧水</p>
+          <p class="zh">Melano CC 化妝水</p>
+          <p class="why">為什麼買：同系列化妝水，可與精華搭</p>
+          <div class="prices"><span>區間 ¥900–1200</span><span class="fair">合理約 ¥990–1100</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/transino-cc.jpg" alt="トランシーノ CCクリーム" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">トランシーノ 薬用トーンアップCCクリーム</p>
+          <p class="zh">Transino 藥用提亮 CC 霜</p>
+          <p class="why">為什麼買：提亮／遮瑕型 CC，伴手熱門</p>
+          <div class="prices"><span>區間 ¥2500–2900</span><span class="fair">合理約 ¥2600–2800</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/hadabisei-mask.jpg" alt="肌美精 3Dマスク" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">肌美精 或 クリアターン 面膜（盒）</p>
+          <p class="zh">肌美精／Clear Turn 面膜（盒裝）</p>
+          <p class="why">為什麼買：盒裝面膜伴手好帶</p>
+          <div class="prices"><span>區間 ¥500–1000</span><span class="fair">合理約 ¥600–850</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/curel-lotion.jpg" alt="キュレル 化粧水" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">キュレル 潤浸保湿 化粧水</p>
+          <p class="zh">Curél 潤浸保濕化妝水</p>
+          <p class="why">為什麼買：敏感／乾燥肌保濕化妝水</p>
+          <div class="prices"><span>區間 ¥1600–2200</span><span class="fair">合理約 ¥1700–2000</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/hatomugi-lotion.jpg" alt="ハトムギ化粧水" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">ハトムギ化粧水（麗白等大瓶）</p>
+          <p class="zh">薏仁化妝水（麗白等大瓶）</p>
+          <p class="why">為什麼買：大瓶化妝水 CP 高、可分裝</p>
+          <div class="prices"><span>區間 ¥300–700</span><span class="fair">合理約 ¥400–550</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== 日用 ===== -->
+  <section class="section" id="daily">
+    <div class="section-head"><h2>日用</h2><span class="count">5 項</span></div>
+    <div class="grid">
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/unicharm-mask.jpg" alt="ユニ・チャーム 超立体マスク" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">ユニ・チャーム 超立体マスク（或超快適）</p>
+          <p class="zh">Unicharm 超立體／超舒適口罩</p>
+          <p class="why">為什麼買：交通／人潮時備用口罩（盒）</p>
+          <div class="prices"><span>區間 ¥500–900／盒</span><span class="fair">合理約 ¥550–750</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/biore-powder-sheet.jpg" alt="ビオレ さらさらパウダーシート" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">ビオレ さらさらパウダーシート</p>
+          <p class="zh">Biore 爽身粉紙巾</p>
+          <p class="why">為什麼買：外出擦汗／清爽隨身</p>
+          <div class="prices"><span>區間 ¥200–400</span><span class="fair">合理約 ¥250–350</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/alcohol-wipes.jpg" alt="アルコールウェットティッシュ" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">アルコールウェットティッシュ</p>
+          <p class="zh">酒精濕紙巾</p>
+          <p class="why">為什麼買：消毒擦拭常備</p>
+          <div class="prices"><span>區間 ¥100–250</span><span class="fair">合理約 ¥120–200</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><div class="empty">暫無圖</div></div>
+        <div class="body">
+          <p class="jp">ダイソー／セリア 密封袋・分裝</p>
+          <p class="zh">大創／Seria 密封袋・分裝用品</p>
+          <p class="why">為什麼買：藥妝／零食分裝、防漏</p>
+          <div class="prices"><span>區間／合理 ¥110</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/extension-cord.jpg" alt="日本兩腳延長線" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">日本兩腳延長線</p>
+          <p class="zh">日本兩腳延長線／插座</p>
+          <p class="why">為什麼買：飯店插座不夠時分電（確認規格）</p>
+          <div class="prices"><span>區間 ¥800–2000</span><span class="fair">合理約 ¥1000–1500</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== UNIQLO ===== -->
+  <section class="section" id="uniqlo">
+    <div class="section-head"><h2>UNIQLO 保暖</h2><span class="count">5 項</span></div>
+    <div class="grid">
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/uniqlo-heattech.jpg" alt="HEATTECH" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">HEATTECH ヒートテック</p>
+          <p class="zh">HEATTECH 發熱衣（一般）</p>
+          <p class="why">為什麼買：內搭保暖基礎款</p>
+          <div class="prices"><span>區間約 ¥1290</span><span class="fair">合理 ¥990–1290</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/uniqlo-gokudan.jpg" alt="HEATTECH 極暖" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">HEATTECH 極暖</p>
+          <p class="zh">HEATTECH Extra Warm 極暖</p>
+          <p class="why">為什麼買：更冷時升級內搭</p>
+          <div class="prices"><span>區間約 ¥1990</span><span class="fair">合理 ¥1490–1990</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/uniqlo-uld.jpg" alt="ウルトラライトダウン" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">ウルトラライトダウン</p>
+          <p class="zh">Ultra Light Down 輕羽絨</p>
+          <p class="why">為什麼買：好收納的外層保暖</p>
+          <div class="prices"><span>區間約 ¥5990–7990</span><span class="fair">合理 ¥5000–7000</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/uniqlo-pufftech.jpg" alt="パフテック" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">パフテック</p>
+          <p class="zh">Pufftech 羽絨感外套</p>
+          <p class="why">為什麼買：輕量蓬鬆保暖外套選項</p>
+          <div class="prices"><span>區間約 ¥6990</span><span class="fair">合理 ¥6000–7000</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/uniqlo-socks.jpg" alt="UNIQLO 襪子" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">UNIQLO 襪子3雙組</p>
+          <p class="zh">UNIQLO 襪子 3 雙組</p>
+          <p class="why">為什麼買：備用襪、好洗好帶</p>
+          <div class="prices"><span>區間 ¥500–1000</span><span class="fair">合理約 ¥500–800</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== 零食／伴手 ===== -->
+  <section class="section" id="snack">
+    <div class="section-head"><h2>零食／伴手・素食友善</h2><span class="count">7 項</span></div>
+    <div class="grid">
+
+      <article class="card">
+        <div class="thumb"><div class="empty">暫無圖</div></div>
+        <div class="body">
+          <p class="jp">塩むすび</p>
+          <p class="zh">鹽飯糰（超商等）</p>
+          <p class="why">為什麼買：簡單鹹食、旅途墊胃</p>
+          <div class="prices"><span>區間 ¥120–160</span><span class="fair">合理約 ¥130–150</span></div>
+          <span class="badge check">素食：相對安全仍看標</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/muki-amaguri.jpg" alt="むき甘栗" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">むき甘栗</p>
+          <p class="zh">去殼甘栗</p>
+          <p class="why">為什麼買：甜點／零食，好攜帶</p>
+          <div class="prices"><span>區間 ¥200–400</span><span class="fair">合理約 ¥250–350</span></div>
+          <span class="badge veg">素食：通常素 OK</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><div class="empty">暫無圖</div></div>
+        <div class="body">
+          <p class="jp">枝豆（超商）</p>
+          <p class="zh">毛豆（超商）</p>
+          <p class="why">為什麼買：鹹香蛋白質點心</p>
+          <div class="prices"><span>區間 ¥150–250</span><span class="fair">合理約 ¥180–220</span></div>
+          <span class="badge veg">素食：通常素 OK（仍看調味）</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><div class="empty">暫無圖</div></div>
+        <div class="body">
+          <p class="jp">キットカット ミニ 土産袋</p>
+          <p class="zh">KitKat mini 伴手袋</p>
+          <p class="why">為什麼買：經典伴手，口味多</p>
+          <div class="prices"><span>區間 ¥800–2500</span><span class="fair">小袋合理約 ¥1000–1500</span></div>
+          <span class="badge dairy">素食注意：含乳</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/shiroi-koibito.jpg" alt="白い恋人" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">白い恋人 9枚／24枚</p>
+          <p class="zh">白色戀人 9／24 枚</p>
+          <p class="why">為什麼買：知名伴手（北海道系，關西亦常見）</p>
+          <div class="prices"><span>9枚約 ¥800–1000</span><span class="fair">合理約 ¥850–950</span></div>
+          <span class="badge dairy">素食注意：含乳</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><div class="empty">暫無圖</div></div>
+        <div class="body">
+          <p class="jp">名古屋 ういろう（小型）</p>
+          <p class="zh">名古屋外郎（小型）</p>
+          <p class="why">為什麼買：名古屋在地伴手</p>
+          <div class="prices"><span>區間 ¥600–1500</span><span class="fair">合理約 ¥800–1200</span></div>
+          <span class="badge check">素食：看成分</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/yokan.jpg" alt="羊羹" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">羊羹（井村屋等）</p>
+          <p class="zh">羊羹（井村屋等）</p>
+          <p class="why">為什麼買：小包裝和菓子、好分送</p>
+          <div class="prices"><span>區間 ¥150–400</span><span class="fair">合理約 ¥200–300</span></div>
+          <span class="badge veg">素食：多素友好（仍看標）</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== 3C ===== -->
+  <section class="section" id="tech">
+    <div class="section-head"><h2>3C</h2><span class="count">4 項</span></div>
+    <p style="margin:0 0 12px;font-size:.82rem;color:var(--muted);line-height:1.5">吸塵器屬<strong>大件家電</strong>：托運／手提要規畫，不一定比台灣退稅後划算。適合「本來就想在日本買吸塵器」；伴手／藥妝優先時可跳過。建議賣場：Bic Camera／Yodobashi／Joshin；現場問<strong>稅込＋點數＋下取り</strong>。</p>
+    <div class="grid">
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/anker-powerbank.jpg" alt="Anker Power Bank" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">Anker Power Bank 10000mAh（約20–22.5W）</p>
+          <p class="zh">Anker 行動電源 10000mAh</p>
+          <p class="why">為什麼買：一日多景點電力備援</p>
+          <div class="prices"><span>區間 ¥3000–4500</span><span class="fair">合理約 ¥3200–3800</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/anker-charger.jpg" alt="Anker USB-C 充電器" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">Anker 多口 USB-C 充電器</p>
+          <p class="zh">Anker 多口 USB-C 充電器</p>
+          <p class="why">為什麼買：多人同時充電、減少牆充數量</p>
+          <div class="prices"><span>區間 ¥2500–5000</span><span class="fair">合理約 ¥3000–4000</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/dyson-pencilvac-fluffy.jpg" alt="Dyson PencilVac Fluffy SV50 FF" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">Dyson PencilVac Fluffy（SV50 FF）</p>
+          <p class="zh">戴森 PencilVac Fluffy｜輕量款</p>
+          <p class="why">為什麼買：約 1.3kg 輕量；Yodobashi／Bic 常見約 ¥59,840</p>
+          <div class="prices"><span>區間參考 ¥55,000–62,000</span><span class="fair">合理約 ¥58,000–60,000（含稅量販）</span></div>
+          <span class="badge check">先比台灣價再決定</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="shopping-images/dyson-pencilvac-fluffycones.jpg" alt="Dyson PencilVac Fluffycones SV50 FC" loading="lazy" /></div>
+        <div class="body">
+          <p class="jp">Dyson PencilVac Fluffycones（SV50 FC）</p>
+          <p class="zh">戴森 PencilVac Fluffycones｜防纏毛頭</p>
+          <p class="why">為什麼買：防纏毛頭、稍重；Bic 等常見約 ¥74,800–84,920（看到破 ¥84,000 先比價）</p>
+          <div class="prices"><span>區間參考 ¥70,000–85,000</span><span class="fair">合理約 ¥74,000–78,000</span></div>
+          <span class="badge check">先比台灣價再決定</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p><strong>價格參考、現場為準。</strong>本頁為 2026 家族日本行（名古屋→大阪）靜態採買備忘；商品圖來自官方或大型通路公開商品照，或以「暫無圖」標示。</p>
+    <p>檔名：<code>japan-trip-shopping-2026.html</code>　｜　可離線以 file:// 開啟（相對路徑圖片）。</p>
+  </footer>
+</main>
+</body>
+</html>

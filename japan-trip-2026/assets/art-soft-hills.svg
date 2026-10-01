@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-hidden="true">
+  <title>Soft hills mist</title>
+  <!-- Ghibli-adjacent atmosphere: soft hills + clouds — no characters -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c56a" stop-opacity=".1"/>
+      <stop offset="100%" stop-color="#0e1012" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c56a" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#e8c56a" stop-opacity=".02"/>
+    </linearGradient>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <rect width="800" height="400" fill="url(#sky)"/>
+  <!-- soft clouds -->
+  <g fill="#e8c56a" fill-opacity=".06" filter="url(#s)">
+    <ellipse cx="180" cy="90" rx="90" ry="28"/>
+    <ellipse cx="240" cy="82" rx="50" ry="20"/>
+    <ellipse cx="560" cy="70" rx="110" ry="32"/>
+    <ellipse cx="620" cy="64" rx="55" ry="18"/>
+  </g>
+  <!-- rolling hills -->
+  <path d="M0 280 C 120 220, 220 300, 340 250 S 520 200, 640 240 S 740 280, 800 250 L800 400 L0 400 Z"
+        fill="url(#hill)"/>
+  <path d="M0 320 C 160 280, 280 340, 420 300 S 620 260, 800 310 L800 400 L0 400 Z"
+        fill="#e8c56a" fill-opacity=".05"/>
+  <!-- soft tree silhouettes (abstract blobs) -->
+  <g fill="#e8c56a" fill-opacity=".1">
+    <ellipse cx="140" cy="250" rx="18" ry="28"/>
+    <ellipse cx="420" cy="235" rx="14" ry="22"/>
+    <ellipse cx="680" cy="245" rx="20" ry="30"/>
+  </g>
+  <circle cx="400" cy="55" r="3" fill="#e8c56a" fill-opacity=".3"/>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-hidden="true">
+  <title>Warm Noritake abstract</title>
+  <!-- Original ceramic-plate geometry in amber/ink — not a brand mark -->
+  <defs>
+    <linearGradient id="plate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8c56a" stop-opacity=".2"/>
+      <stop offset="100%" stop-color="#c9a84a" stop-opacity=".04"/>
+    </linearGradient>
+    <radialGradient id="rim" cx="50%" cy="48%" r="48%">
+      <stop offset="70%" stop-color="#e8c56a" stop-opacity="0"/>
+      <stop offset="88%" stop-color="#e8c56a" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#e8c56a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- overlapping plates -->
+  <ellipse cx="280" cy="210" rx="160" ry="118" fill="url(#plate)" stroke="#e8c56a" stroke-opacity=".22" stroke-width="1.5"/>
+  <ellipse cx="280" cy="210" rx="160" ry="118" fill="url(#rim)"/>
+  <ellipse cx="280" cy="210" rx="118" ry="86" fill="none" stroke="#e8c56a" stroke-opacity=".14" stroke-width="1"/>
+  <ellipse cx="280" cy="210" rx="72" ry="52" fill="none" stroke="#e8c56a" stroke-opacity=".2" stroke-width="1"/>
+  <!-- second plate offset -->
+  <ellipse cx="420" cy="170" rx="110" ry="80" fill="none" stroke="#e8c56a" stroke-opacity=".12" stroke-width="1.2"/>
+  <ellipse cx="420" cy="170" rx="78" ry="56" fill="none" stroke="#e8c56a" stroke-opacity=".1" stroke-width="1"/>
+  <!-- fan / lattice motif (abstract) -->
+  <g stroke="#e8c56a" stroke-opacity=".22" stroke-width="1.2" fill="none" stroke-linecap="round">
+    <path d="M120 300 L160 220 L200 300"/>
+    <path d="M140 300 L160 240 L180 300"/>
+    <path d="M500 90 L540 40 L580 90"/>
+    <path d="M520 90 L540 55 L560 90"/>
+  </g>
+  <!-- ink stamps -->
+  <rect x="520" y="280" width="48" height="48" rx="2" fill="none" stroke="#e8c56a" stroke-opacity=".28" stroke-width="1.4" transform="rotate(-8 544 304)"/>
+  <circle cx="544" cy="304" r="10" fill="none" stroke="#e8c56a" stroke-opacity=".35" stroke-width="1.2"/>
+  <path d="M70 70 h60 M70 78 h40" stroke="#e8c56a" stroke-opacity=".15" stroke-width="1"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-hidden="true">
+  <title>Abstract route field</title>
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c56a" stop-opacity=".1"/>
+      <stop offset="100%" stop-color="#0e1012" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8c56a" stop-opacity=".45"/>
+      <stop offset="60%" stop-color="#c9a84a" stop-opacity=".25"/>
+      <stop offset="100%" stop-color="#e8c56a" stop-opacity=".08"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#fade)"/>
+  <!-- contour-like route ribbons (editorial map abstraction) -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M40 380 C 200 280, 320 460, 480 340 S 760 220, 980 300 S 1120 360, 1180 280"
+          stroke="#e8c56a" stroke-opacity=".06" stroke-width="40"/>
+    <path d="M40 380 C 200 280, 320 460, 480 340 S 760 220, 980 300 S 1120 360, 1180 280"
+          stroke="url(#path)" stroke-width="1.8"/>
+    <path d="M60 200 C 240 160, 400 240, 560 180 S 880 120, 1140 160"
+          stroke="#e8c56a" stroke-opacity=".1" stroke-width="1.2"/>
+    <path d="M80 480 C 280 440, 420 520, 640 460 S 960 400, 1160 440"
+          stroke="#e8c56a" stroke-opacity=".07" stroke-width="1"/>
+  </g>
+  <g fill="#e8c56a">
+    <circle cx="40" cy="380" r="4" fill-opacity=".5"/>
+    <circle cx="480" cy="340" r="3" fill-opacity=".35"/>
+    <circle cx="980" cy="300" r="3.5" fill-opacity=".28"/>
+  </g>
+  <!-- grid ticks like a handbook margin -->
+  <g stroke="#e8c56a" stroke-opacity=".06" stroke-width="1">
+    <path d="M100 40 V560 M200 40 V560 M300 40 V560 M400 40 V560 M500 40 V560
+             M600 40 V560 M700 40 V560 M800 40 V560 M900 40 V560 M1000 40 V560"/>
+  </g>
+</svg>

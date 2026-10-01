@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-hidden="true">
+  <title>Ink bloom wash</title>
+  <defs>
+    <radialGradient id="b1" cx="32%" cy="38%" r="42%">
+      <stop offset="0%" stop-color="#e8c56a" stop-opacity=".2"/>
+      <stop offset="45%" stop-color="#c9a84a" stop-opacity=".06"/>
+      <stop offset="100%" stop-color="#0e1012" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b2" cx="72%" cy="58%" r="38%">
+      <stop offset="0%" stop-color="#e8c56a" stop-opacity=".12"/>
+      <stop offset="100%" stop-color="#0e1012" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+  <ellipse cx="260" cy="230" rx="220" ry="180" fill="url(#b1)" filter="url(#blur)"/>
+  <ellipse cx="560" cy="350" rx="200" ry="160" fill="url(#b2)" filter="url(#blur)"/>
+  <g fill="none" stroke="#e8c56a" stroke-linecap="round" filter="url(#blur)">
+    <path d="M80 420 C 220 300, 360 480, 520 340 S 720 260, 760 380" stroke-width="36" stroke-opacity=".08"/>
+  </g>
+  <circle cx="180" cy="160" r="2.5" fill="#e8c56a" fill-opacity=".4"/>
+  <circle cx="620" cy="420" r="2" fill="#e8c56a" fill-opacity=".28"/>
+</svg>

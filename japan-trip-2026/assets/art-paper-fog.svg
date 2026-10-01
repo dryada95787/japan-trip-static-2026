@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-hidden="true">
+  <title>Paper fog</title>
+  <defs>
+    <linearGradient id="f1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2f0ea" stop-opacity=".04"/>
+      <stop offset="40%" stop-color="#e8c56a" stop-opacity=".06"/>
+      <stop offset="100%" stop-color="#0e1012" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="fog" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="500" fill="url(#f1)"/>
+  <g fill="#e8c56a" filter="url(#fog)">
+    <ellipse cx="200" cy="220" rx="260" ry="80" fill-opacity=".07"/>
+    <ellipse cx="520" cy="280" rx="300" ry="90" fill-opacity=".05"/>
+    <ellipse cx="800" cy="180" rx="220" ry="70" fill-opacity=".06"/>
+  </g>
+  <g stroke="#e8c56a" stroke-opacity=".06" stroke-width="1" fill="none">
+    <path d="M60 120 H300"/>
+    <path d="M700 380 H940"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-hidden="true">
+  <title>Porcelain stamp</title>
+  <defs>
+    <radialGradient id="g" cx="50%" cy="50%" r="50%">
+      <stop offset="60%" stop-color="#e8c56a" stop-opacity="0"/>
+      <stop offset="85%" stop-color="#e8c56a" stop-opacity=".2"/>
+      <stop offset="100%" stop-color="#e8c56a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="28" y="28" width="184" height="184" rx="6" fill="none" stroke="#e8c56a" stroke-opacity=".32" stroke-width="2" transform="rotate(-6 120 120)"/>
+  <rect x="40" y="40" width="160" height="160" rx="4" fill="url(#g)" stroke="#e8c56a" stroke-opacity=".18" stroke-width="1" transform="rotate(-6 120 120)"/>
+  <circle cx="120" cy="120" r="48" fill="none" stroke="#e8c56a" stroke-opacity=".28" stroke-width="1.4"/>
+  <circle cx="120" cy="120" r="28" fill="none" stroke="#e8c56a" stroke-opacity=".22" stroke-width="1"/>
+  <circle cx="120" cy="120" r="8" fill="#e8c56a" fill-opacity=".35"/>
+  <!-- lattice ticks -->
+  <g stroke="#e8c56a" stroke-opacity=".2" stroke-width="1" stroke-linecap="round">
+    <path d="M120 72 v-12 M120 180 v12 M72 120 h-12 M180 120 h12"/>
+    <path d="M88 88 l-8-8 M152 88 l8-8 M88 152 l-8 8 M152 152 l8 8"/>
+  </g>
+</svg>

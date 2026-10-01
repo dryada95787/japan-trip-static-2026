@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 480" role="img" aria-hidden="true">
+  <title>Route corridor abstract</title>
+  <!-- Vertical variation of mark-route.svg — faint rail backdrop -->
+  <defs>
+    <linearGradient id="inkv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c56a" stop-opacity=".55"/>
+      <stop offset="50%" stop-color="#c9a84a" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#e8c56a" stop-opacity=".12"/>
+    </linearGradient>
+  </defs>
+  <!-- soft corridor -->
+  <path d="M160 24 C 110 90, 210 150, 140 220 S 200 320, 160 456"
+        fill="none" stroke="#e8c56a" stroke-opacity=".08" stroke-width="28" stroke-linecap="round"/>
+  <!-- main route -->
+  <path d="M160 24 C 110 90, 210 150, 140 220 S 200 320, 160 456"
+        fill="none" stroke="url(#inkv)" stroke-width="2" stroke-linecap="round"/>
+  <!-- nodes -->
+  <circle cx="160" cy="24" r="5" fill="#e8c56a" fill-opacity=".7"/>
+  <circle cx="160" cy="24" r="10" fill="none" stroke="#e8c56a" stroke-opacity=".2" stroke-width="1"/>
+  <circle cx="140" cy="220" r="3.5" fill="#0e1012" stroke="#e8c56a" stroke-width="1.4" stroke-opacity=".6"/>
+  <circle cx="160" cy="456" r="4" fill="#e8c56a" fill-opacity=".4"/>
+  <!-- tick marks -->
+  <g stroke="#e8c56a" stroke-opacity=".3" stroke-width="1.2" stroke-linecap="round">
+    <path d="M128 100 h16 M158 300 h16 M138 380 h16"/>
+  </g>
+</svg>

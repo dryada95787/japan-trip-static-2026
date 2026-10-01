@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-hidden="true">
+  <title>Ambient paper wash</title>
+  <!-- Soft travel-handbook atmosphere: warm ink pools + paper grain suggestion -->
+  <defs>
+    <radialGradient id="a" cx="18%" cy="12%" r="55%">
+      <stop offset="0%" stop-color="#e8c56a" stop-opacity=".16"/>
+      <stop offset="55%" stop-color="#c9a84a" stop-opacity=".04"/>
+      <stop offset="100%" stop-color="#0e1012" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b" cx="88%" cy="78%" r="48%">
+      <stop offset="0%" stop-color="#e8c56a" stop-opacity=".09"/>
+      <stop offset="100%" stop-color="#0e1012" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="c" cx="62%" cy="28%" r="36%">
+      <stop offset="0%" stop-color="#f2f0ea" stop-opacity=".035"/>
+      <stop offset="100%" stop-color="#0e1012" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="#0e1012"/>
+  <rect width="1200" height="800" fill="url(#a)"/>
+  <rect width="1200" height="800" fill="url(#b)"/>
+  <rect width="1200" height="800" fill="url(#c)"/>
+  <!-- ink brush arcs (abstract) -->
+  <g fill="none" stroke="#e8c56a" stroke-linecap="round" filter="url(#soft)">
+    <path d="M80 520 C 260 420, 420 640, 620 480 S 980 360, 1120 520" stroke-width="48" stroke-opacity=".07"/>
+    <path d="M40 220 C 280 140, 480 260, 720 180 S 1040 120, 1180 200" stroke-width="28" stroke-opacity=".05"/>
+  </g>
+  <!-- fine editorial rules -->
+  <g stroke="#e8c56a" stroke-opacity=".08" stroke-width="1">
+    <path d="M120 120 H420"/>
+    <path d="M780 640 H1080"/>
+  </g>
+  <circle cx="180" cy="140" r="3" fill="#e8c56a" fill-opacity=".35"/>
+  <circle cx="1020" cy="660" r="3" fill="#e8c56a" fill-opacity=".28"/>
+</svg>
